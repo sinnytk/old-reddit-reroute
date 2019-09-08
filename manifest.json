@@ -1,0 +1,10 @@
+{
+    "manifest_version": 2,
+    "name":"old-reddit-reroute",
+    "version": "1",
+    "description": "A web browser extension to reroute all reddit.com links to old.reddit.com",
+    "background": {
+        "scripts" : ["redirect.js"],
+        "persistent": false
+    }
+}
