@@ -1,4 +1,4 @@
-var oldreddit = "https://old.reddit.com";
+const oldreddit = "https://old.reddit.com";
 chrome.webRequest.onBeforeRequest.addListener(
     function() {
         return {redirectUrl: `${oldreddit}`};
