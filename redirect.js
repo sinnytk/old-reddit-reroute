@@ -1,9 +1,11 @@
+var oldreddit = "https://old.reddit.com";
 chrome.webRequest.onBeforeRequest.addListener(
     function() {
-        alert("hello world")
+        return {redirectUrl: `${oldreddit}`};
     },
     {
         urls: ["*://reddit.com/*","*://www.reddit.com/*"],
         types: ['main_frame']
-    }
+    },
+    ["blocking"]
 );
