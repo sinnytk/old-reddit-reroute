@@ -12,5 +12,6 @@
         "webRequestBlocking",
         "*://reddit.com/*",
         "*://www.reddit.com/*"
-    ]
+    ],
+    "icons": {"128": "icon.png" }
 }
